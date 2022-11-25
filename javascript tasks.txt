@@ -1,0 +1,56 @@
+//ARRAY INSERT VALUE//
+
+ if (addit.includes(e.servicename)) {
+        console.log("check inclures", addit.includes(e.servicename))
+
+
+      } else {
+
+        setAddit([...addit, e.servicename])
+      }
+
+//remove value//
+
+ const CheckArry = (e) => {
+
+    console.log("check e", e)
+
+
+
+
+
+    const data = addit.filter(item => item !== e)
+    setAddit(data)
+    console.log("arr", data)
+    return data
+    // [ 1, 2, 4, 5 ]
+
+
+
+  }
+
+
+//PASSING Data in navigate
+ navigate('/Reserve?status=true',{state:{service:serv,startdate:startdate,enddate:enddate}})
+
+getting data from uselocation
+const location = useLocation();
+
+
+//GETTING DATA FROM PARAMS
+const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+    });
+
+
+//HOW TO ACTIVE SELECTED LINK
+
+ first we can get selected path name from uselocation
+ const location = useLocation();
+   //destructuring pathname from location
+   const { pathname } = location;
+we can get pathname in this and then we make a state
+in which we pass that pathname and set it in useeffect.
+then we make condition in link
+className={active == "/AdminCardDetails" ? "menu--link  navActive":"menu--link "}
+
