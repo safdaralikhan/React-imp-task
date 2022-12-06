@@ -54,3 +54,17 @@ in which we pass that pathname and set it in useeffect.
 then we make condition in link
 className={active == "/AdminCardDetails" ? "menu--link  navActive":"menu--link "}
 
+
+
+HOW TO GET FILTER DATA 
+IS SY HUM EK ARRY YA OBJET SY FILTER KR K JB 2 CHEEZEIN SAME HOGI TO US KA DATA AYEGA.
+const DataFilter = getplate.filter((v, i) => event.target.value === v.licensePlate);
+
+ 
+ 
+ let uniqueObjArray = [
+              ...new Map(Uniquedata.map((item) => [item["name"], item])).values(),
+          ];
+
+
+
