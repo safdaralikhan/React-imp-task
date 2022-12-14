@@ -68,3 +68,44 @@ const DataFilter = getplate.filter((v, i) => event.target.value === v.licensePla
 
 
 
+
+DROPDOWN UPDOWN ARROW WORK ON array of obj.
+
+ const upfunction =  () =>{
+        console.log("start of inside counter==>",counter)
+        
+        if(counter <  testinomialarray.length-1)  
+        { 
+            setcounter(counter + 1 )
+            const incremntdata =testinomialarray.filter((a,index)=>(counter + 1 ) == index )
+
+            setdesc(incremntdata[0].description)
+            setreview(incremntdata[0].Review)
+         
+
+            console.log("RIGHT")
+        }
+    
+
+    }
+
+    const downfunction =  () =>{
+        
+        if (counter > 0){
+
+            setcounter(counter - 1 )
+            const incremntdata =testinomialarray.filter((a,index)=>(counter - 1 ) == index )
+
+            console.log("decrement",incremntdata)
+
+            setdesc(incremntdata[0].description)
+            setreview(incremntdata[0].Review)
+         
+
+            console.log("RIGHT")
+
+        }
+
+    
+
+
