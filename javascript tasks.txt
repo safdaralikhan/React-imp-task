@@ -107,5 +107,9 @@ DROPDOWN UPDOWN ARROW WORK ON array of obj.
         }
 
     
+    
+    //REACT SELECT KO OPER LANY K LIYE CODE //
+       menuPortalTarget={document.body}
+                       styles={{menuPortal:base=>({...base,zIndex:999})}}
 
 
