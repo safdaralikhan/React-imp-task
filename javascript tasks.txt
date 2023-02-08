@@ -111,5 +111,18 @@ DROPDOWN UPDOWN ARROW WORK ON array of obj.
     //REACT SELECT KO OPER LANY K LIYE CODE //
        menuPortalTarget={document.body}
                        styles={{menuPortal:base=>({...base,zIndex:999})}}
+                       
+                       
+  DYNAMIC TIME UPDATE IN SECONDS WITH MOMENT
+  useEffect(() => {
+        var update = function() {
+            setDur(prev => moment(prev, 'hh:mm:ss').add(1, "second").format('hh:mm:ss'))
+        }
+        const interval = setInterval(update, 1000);
+
+        return () => clearInterval(interval)
+    }, [])
+    
+
 
 
