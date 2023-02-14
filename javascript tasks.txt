@@ -123,6 +123,21 @@ DROPDOWN UPDOWN ARROW WORK ON array of obj.
         return () => clearInterval(interval)
     }, [])
     
+    
+    DIRECT  SMS EMAIL AND TELEPHONE IN ANCHOR TAG
+      <div className="row">
+                  <div className="col-md-12 " >
+                    <div className='d-flex '>
+                      <p className='mx-2' style={{ fontSize: "20px" }}>Phone Number :</p><h5 ><a href="tel:+1 (833) 310-7275" style={{ fontSize: "22px" , color:"black" }}>+1 (833) 310-7275</a></h5></div>
+                    <div className='d-flex '>
+                      <p className='mx-2' style={{ fontSize: "20px" }}>Text Number : </p><h5 > <a style={{ fontSize: "23px" , color:"black" }}  href="sms:+1(310 800-1075)">+1(310 800-1075)</a></h5></div>
+                    <div className='d-flex '>
+                      <p className='mx-2' style={{ fontSize: "20px" }}>Email : </p><h5 > <a style={{ fontSize: "23px" , color:"black" }} href="mailto:reservation@laxcurbsideexpress.com">reservation@laxcurbsideexpress.com</a></h5></div>
+
+                  </div>
+
+
+                </div>
 
 
 
