@@ -141,3 +141,15 @@ DROPDOWN UPDOWN ARROW WORK ON array of obj.
 
 
 
+REACT ZOOM LIBRARY
+ "react-zoom-pan-pinch": "^3.0.7",
+ PDF
+ "@react-pdf-viewer/core": "^3.12.0",
+ 
+ import { Viewer, Worker } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.5.141/build/pdf.worker.js">
+                                <Viewer fileUrl={url} />
+                            </Worker>
+ "@react-pdf-viewer/core": "^3.12.0",
