@@ -163,4 +163,24 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
  MAKE DYNAMIC USEREF
  const imgRef = useRef([]);
   ref={(el) => imgRef.current[i] = el}
+
+
+
+USEREDUCER 
+const [state,dispatch] = useReducer(reducer,initialvalue)
+
+
+// reducer ka function main function sy b uper bunta ha //
+const reducer = (state,action)=>{
+
+if (action.type=== "INC"){
+
+return state + 2
+}
+
+}
+
+<button onClick=(()=>dispatch({type: "INC"}))>INCREMENT< /button>
+
+
  
