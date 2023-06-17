@@ -182,5 +182,17 @@ return state + 2
 
 <button onClick=(()=>dispatch({type: "INC"}))>INCREMENT< /button>
 
+USEMEMO
+ya values memorize krta ha.
+USECALLBACK
+ya pora function memorize krta ha.
+The useMemo Hook only runs when one of its dependencies update.
+This can improve performance,
+
+The useMemo and useCallback Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function. 
+
+MEMO
+ya is liye use hota ha jb humaray props change nhe ho to componenet render na ho.
+
 
  
