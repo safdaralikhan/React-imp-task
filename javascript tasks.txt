@@ -159,7 +159,11 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
  
  REACT IMAGE MARK EDIT LIBRARY
  NPM RUN "markerjs2": "^2.29.1"
- 
+
+REACT TOUR LIBRARY 
+https://www.npmjs.com/package/reactour
+npm i -S @reactour/tour
+
  MAKE DYNAMIC USEREF
  const imgRef = useRef([]);
   ref={(el) => imgRef.current[i] = el}
