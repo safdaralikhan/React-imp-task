@@ -164,6 +164,10 @@ REACT TOUR LIBRARY
 https://www.npmjs.com/package/reactour
 npm i -S @reactour/tour
 
+REACT IMAGE EDIT COLOR CHANGE AND CONTRAST BRIGHNESS ETC LIBRARY
+npm install --save react-filerobot-image-editor
+npm install --save react react-dom react-konva styled-components
+
  MAKE DYNAMIC USEREF
  const imgRef = useRef([]);
   ref={(el) => imgRef.current[i] = el}
