@@ -202,5 +202,13 @@ The useMemo and useCallback Hooks are similar. The main difference is that useMe
 MEMO
 ya is liye use hota ha jb humaray props change nhe ho to componenet render na ho.
 
+Heap isssue runing project stop in ract js
+The memory heap out issue occurs when the heap size is not sufficient to run the application. To resolve this issue, open the package.json file, which can be found in the root folder of React application and use --max_old_space_size=4096 as like in the below code snippet.
+"scripts": {
+    "start": "react-scripts --max_old_space_size=4096 start",
+    "build": "react-scripts --max_old_space_size=4096 build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+}
 
  
